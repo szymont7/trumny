@@ -1,0 +1,397 @@
+* {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+  height: 30vw;
+  width: 100vw;
+  align-items: center;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-shadow: 2px 2px 7px #000000;
+  background-color: #1f1f1f;
+}
+
+.banner h1 {
+  font-family: nexa-light;
+  color: white;
+  font-weight: 10;
+  text-transform: uppercase;
+  text-align: left;
+  z-index: 1;
+  font-size: 7vw;
+
+  position: relative;
+}
+.banner h1 span {
+  font-weight: 900;
+}
+.slider {
+  position: absolute;
+  width: 100%;
+  height: 30vw;
+  display: block;
+  background: #1f1f1f;
+  overflow: hidden;
+}
+.slider > * {
+  height: 30vw;
+  position: absolute;
+  animation: slide 12s infinite;
+  overflow: hidden;
+  display: block;
+  background: #1f1f1f;
+}
+.slide1 {
+  animation-delay: -1s;
+  background-image: url("img/trumna1.png");
+  background-size: cover;
+  background-position: center;
+}
+.slide2 {
+  animation-delay: 2s;
+  background-image: url("img/trumna2.png");
+  background-size: cover;
+  background-position: center;
+}
+.slide3 {
+  animation-delay: 5s;
+  background-image: url("img/trumna3.png");
+  background-size: cover;
+  background-position: center;
+}
+.slide4 {
+  animation-delay: 8s;
+  background-image: url("img/trumna4.png");
+  background-size: cover;
+  background-position: center;
+}
+.slider img {
+  height: 30vw;
+  margin-left: 19vw;
+}
+@keyframes slide {
+  0% {
+    left: 100%;
+    width: 100%;
+  }
+  5% {
+    left: 0%;
+  }
+  25% {
+    left: 0%;
+  }
+  30% {
+    left: -100%;
+    width: 100%;
+  }
+  30.0001% {
+    left: -100%;
+    width: 0%;
+  }
+  100% {
+    left: 100%;
+    width: 0%;
+  }
+}
+
+.logo {
+  position: absolute;
+  top: 3vw;
+  left: 3vw;
+  z-index: 2;
+  font-size: 2vw;
+  font-family: nokkok;
+  color: white;
+}
+hr {
+  position: absolute;
+  z-index: 2;
+  margin-left: 12.3vw;
+  margin-top: 3.3vw;
+  width: 0.5;
+  height: 1.8vw;
+  color: white;
+}
+
+.logo2 {
+  position: absolute;
+  z-index: 2;
+  font-family: nexa-light;
+  float: left;
+  top: 3.2vw;
+  left: 13vw;
+  color: white;
+  font-size: 0.9vw;
+  font-weight: 400;
+}
+.pasek {
+  width: 100vw;
+  text-align: center;
+
+  font-family: notolight;
+  background-color: whitesmoke;
+  color: black;
+  font-size: 3vw;
+  border-top: #1f1f1f solid 0.3vw;
+  border-bottom: #1f1f1f solid 0.3vw;
+  text-shadow: 2px 2px 3px #1f1f1f;
+}
+.content {
+  width: 100%;
+  height: 50vw;
+  background-color: #1f1f1f;
+}
+.topnav {
+  overflow: hidden;
+
+  position: fixed;
+  font-family: noto;
+  top: 0;
+  right: 0;
+  z-index: 20;
+}
+
+.topnav a {
+  color: white;
+  padding-right: 0.8vw;
+  text-decoration: none;
+
+  float: left;
+}
+.topnav #linki {
+  display: none;
+  padding-right: 6vw;
+  padding-top: 1.2vw;
+  font-size: 2.3vw;
+}
+.topnav a.icon {
+  position: fixed;
+  right: 0.5vw;
+  top: 0.2vw;
+  z-index: 5;
+  font-size: 4vw;
+  color: white;
+  overflow: hidden;
+}
+.topnav a:hover {
+  color: rgb(105, 105, 105);
+}
+
+footer {
+  left: 0;
+  bottom: 0;
+  background-color: #000000;
+  width: 100vw;
+  color: white;
+  text-shadow: 2px 2px 3px #1f1f1f;
+  text-align: center;
+  height: 4vw;
+  font-family: noto;
+}
+
+@font-face {
+  font-family: nexa-light;
+  src: url(font/nexa-light.otf);
+}
+@font-face {
+  font-family: nokkok;
+  src: url(font/nokkok.ttf);
+}
+@font-face {
+  font-family: noto;
+  src: url(font/NotoSansKR-Regular.otf);
+}
+@font-face {
+  font-family: notolight;
+  src: url(font/NotoSansKR-Light.otf);
+}
+
+/*TABLET*/
+
+@media screen and (min-width: 600px) and (max-width: 1099px) {
+  .banner {
+    height: 50vw;
+    width: 100vw;
+    align-items: center;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-shadow: 2px 2px 7px #000000;
+    background-color: #1f1f1f;
+  }
+  .banner h1 {
+    font-family: nexa-light;
+    color: white;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: left;
+    z-index: 1;
+    font-size: 10vw;
+
+    position: relative;
+  }
+  .logo {
+    position: absolute;
+    top: 2.5vw;
+    left: 3vw;
+    z-index: 2;
+    font-size: 3vw;
+    font-family: nokkok;
+    color: white;
+  }
+  hr {
+    position: absolute;
+    z-index: 2;
+    margin-left: 16.6vw;
+    margin-top: 2.9vw;
+    width: 0.5;
+    height: 2.6vw;
+    color: white;
+  }
+  .logo2 {
+    position: absolute;
+    z-index: 2;
+    font-family: nexa-light;
+    float: left;
+    top: 2.6vw;
+    left: 17.6vw;
+    color: white;
+    font-size: 1.5vw;
+    font-weight: 400;
+  }
+  .topnav #linki {
+    display: none;
+    padding-right: 8vw;
+    padding-top: 1.2vw;
+    font-size: 3.5vw;
+  }
+  .topnav a.icon {
+    position: fixed;
+    right: 0.5vw;
+    top: 0.2vw;
+    z-index: 5;
+    font-size: 6vw;
+    color: white;
+    overflow: hidden;
+  }
+}
+
+/*MOBILE*/
+
+@media screen and (max-width: 599px) {
+  .banner {
+    height: 70vw;
+    width: 100vw;
+    align-items: center;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-shadow: 2px 2px 7px #000000;
+    background-color: #1f1f1f;
+  }
+  .banner h1 {
+    font-family: nexa-light;
+    color: white;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: left;
+    z-index: 1;
+    font-size: 13vw;
+
+    position: relative;
+  }
+  .logo {
+    position: absolute;
+    top: 2.5vw;
+    left: 3vw;
+    z-index: 2;
+    font-size: 5vw;
+    font-family: nokkok;
+    color: white;
+  }
+  hr {
+    position: absolute;
+    z-index: 2;
+    margin-left: 25vw;
+    margin-top: 3.1vw;
+    width: 0.5;
+    height: 4.3vw;
+    color: white;
+  }
+  .logo2 {
+    position: absolute;
+    z-index: 2;
+    font-family: nexa-light;
+    float: left;
+    top: 3.2vw;
+    left: 26vw;
+    color: white;
+    font-size: 2.2vw;
+    font-weight: 400;
+  }
+  .slider {
+    position: absolute;
+    width: 100%;
+    height: 50vw;
+    display: block;
+    background: #1f1f1f;
+    overflow: hidden;
+  }
+  .slider > * {
+    height: 50vw;
+    position: absolute;
+    animation: slide 12s infinite;
+    overflow: hidden;
+    display: block;
+    background: #1f1f1f;
+  }
+  .slide1 {
+    animation-delay: -1s;
+    background-image: url("img/trumna1.png");
+    background-size: cover;
+    background-position: center;
+  }
+  .slide2 {
+    animation-delay: 2s;
+    background-image: url("img/trumna2.png");
+    background-size: cover;
+    background-position: center;
+  }
+  .slide3 {
+    animation-delay: 5s;
+    background-image: url("img/trumna3.png");
+    background-size: cover;
+    background-position: center;
+  }
+  .slide4 {
+    animation-delay: 8s;
+    background-image: url("img/trumna4.png");
+    background-size: cover;
+    background-position: center;
+  }
+  .topnav #linki {
+    display: none;
+    padding-right: 8vw;
+    padding-top: 2vw;
+    font-size: 3.5vw;
+  }
+  .topnav a.icon {
+    position: fixed;
+    right: 0.5vw;
+    top: 0.2vw;
+    z-index: 5;
+    font-size: 7vw;
+    color: white;
+    overflow: hidden;
+  }
+}
