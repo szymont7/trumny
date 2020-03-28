@@ -213,7 +213,7 @@ hr {
     text-transform: uppercase;
     text-align: left;
     z-index: 1;
-    font-size: 8vw;
+    font-size: 13vw;
 
     position: relative;
   }
@@ -222,17 +222,17 @@ hr {
     top: 2.5vw;
     left: 3vw;
     z-index: 2;
-    font-size: 2.5vw;
+    font-size: 5vw;
     font-family: nokkok;
     color: white;
   }
   hr {
     position: absolute;
     z-index: 2;
-    margin-left: 14.3vw;
+    margin-left: 25vw;
     margin-top: 3.1vw;
     width: 0.5;
-    height: 1.8vw;
+    height: 4.3vw;
     color: white;
   }
   .logo2 {
@@ -240,10 +240,10 @@ hr {
     z-index: 2;
     font-family: nexa-light;
     float: left;
-    top: 2.9vw;
-    left: 15.7vw;
+    top: 3.2vw;
+    left: 26vw;
     color: white;
-    font-size: 1.2vw;
+    font-size: 2.2vw;
     font-weight: 400;
   }
 }
