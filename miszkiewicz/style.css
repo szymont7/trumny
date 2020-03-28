@@ -6,6 +6,7 @@
 
 .banner {
   height: 30vw;
+  width: 100vw;
   align-items: center;
   margin: 0;
   overflow: hidden;
@@ -13,6 +14,7 @@
   display: flex;
   justify-content: center;
   text-shadow: 2px 2px 7px #000000;
+  background-color: #1f1f1f;
 }
 
 .banner h1 {
@@ -164,6 +166,18 @@ hr {
 /*TABLET SCREENS*/
 
 @media screen and (min-width: 600px) and (max-width: 1099px) {
+  .banner {
+    height: 50vw;
+    width: 100vw;
+    align-items: center;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-shadow: 2px 2px 7px #000000;
+    background-color: #1f1f1f;
+  }
   .banner h1 {
     font-family: nexa-light;
     color: white;
@@ -180,6 +194,18 @@ hr {
 /*MOBILE SCREENS*/
 
 @media screen and (max-width: 599px) {
+  .banner {
+    height: 70vw;
+    width: 100vw;
+    align-items: center;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-shadow: 2px 2px 7px #000000;
+    background-color: #1f1f1f;
+  }
   .banner h1 {
     font-family: nexa-light;
     color: white;
