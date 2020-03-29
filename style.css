@@ -224,7 +224,7 @@ footer {
   font-family: nexa-light;
   font-weight: bold;
   font-size: 2.3vw;
-  margin-left: 18.2vw;
+  margin-left: 17.5vw;
 }
 .tb td {
   padding: 2vw 4vw;
@@ -554,22 +554,26 @@ label {
   .topnav #linki {
     display: none;
     width: 24vw;
-    min-height: 19vh;
+    min-width: 100%;
+    min-height: auto;
     opacity: 100%;
-    font-size: 4.5vw;
-    padding-left: 2em;
-    max-height: 25vh;
+    font-size: 10vw;
+    padding-left: 1em;
+    padding-right: 2.1em;
+    padding-bottom: 0.5em;
+    color: white;
   }
   .topnav a.icon {
     position: fixed;
     right: 0.5vw;
-    top: 0.2vw;
     z-index: 5;
-    font-size: 7vw;
+    font-size: 8vw;
     color: white;
     overflow: hidden;
-    float: right;
+
     opacity: 100%;
+    margin-top: 0;
+    padding-top: 0;
   }
   .topnav a {
     color: white;
@@ -579,15 +583,17 @@ label {
     opacity: unset;
   }
   .topnav {
+    background-color: #1f1f1f;
     overflow: hidden;
-    background-color: black;
-    opacity: 90%;
     position: fixed;
     font-family: noto;
     top: 0;
     right: 0;
     z-index: 20;
     border-radius: 10px;
+    border-bottom: solid white 2px;
+    border-left: solid white 2px;
+    opacity: 90%;
   }
   footer {
     background-color: #000000;
@@ -597,7 +603,8 @@ label {
     text-align: center;
     height: 2.5rem;
     font-family: noto;
-    font-size: 0.8rem;
+    font-size: 1em;
+    padding-bottom: 3vh;
     margin-top: 2vh;
   }
   .pasek {
@@ -627,7 +634,7 @@ label {
   .tb {
     border-collapse: collapse;
     border-spacing: 0;
-    margin-left: 7vw;
+    margin-left: 4vw;
     background-color: whitesmoke;
     color: black;
     font-family: nexa-light;
