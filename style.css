@@ -299,6 +299,7 @@ label {
   float: left;
   margin-left: 34vw;
 }
+
 /*TABLET*/
 
 @media screen and (min-width: 600px) and (max-width: 1099px) {
@@ -410,6 +411,9 @@ label {
     float: left;
     margin-left: 24.7vw;
   }
+  #indexfont {
+    font-size: 2em;
+  }
 }
 
 /*MOBILE*/
@@ -451,7 +455,7 @@ label {
     position: absolute;
     z-index: 2;
     margin-left: 25vw;
-    margin-top: 2.6vw;
+    margin-top: 2.4vw;
     width: 0.5;
     height: 4.3vw;
     color: white;
@@ -461,7 +465,7 @@ label {
     z-index: 2;
     font-family: nexa-light;
     float: left;
-    top: 2.8vw;
+    top: 2.6vw;
     left: 26vw;
     color: white;
     font-size: 2.2vw;
@@ -509,12 +513,12 @@ label {
   }
   .topnav #linki {
     display: none;
-    width: 27vw;
-    height: 18vh;
-    border-left: 2px solid rgb(66, 65, 65);
-    border-bottom: 2px solid rgb(66, 65, 65);
+    width: 24vw;
+    min-height: 19vh;
+    opacity: 100%;
     font-size: 4.5vw;
-    padding-left: 2vw;
+    padding-left: 2em;
+    max-height: 25vh;
   }
   .topnav a.icon {
     position: fixed;
@@ -525,21 +529,25 @@ label {
     color: white;
     overflow: hidden;
     float: right;
+    opacity: 100%;
   }
   .topnav a {
     color: white;
     padding-right: 0.8vw;
     text-decoration: none;
     display: block;
+    opacity: unset;
   }
   .topnav {
     overflow: hidden;
     background-color: black;
+    opacity: 90%;
     position: fixed;
     font-family: noto;
     top: 0;
     right: 0;
     z-index: 20;
+    border-radius: 10px;
   }
   footer {
     background-color: #000000;
@@ -569,7 +577,6 @@ label {
     background-color: #1f1f1f;
     color: whitesmoke;
     font-family: nexa-light;
-    font-size: 1.6em;
     padding-top: 3vh;
     padding-bottom: 5vh;
   }
@@ -636,5 +643,8 @@ label {
     float: left;
     font-size: 2em;
     margin-left: 10vw;
+  }
+  #indexfont {
+    font-size: 3em;
   }
 }
