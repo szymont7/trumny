@@ -273,6 +273,7 @@ input {
   border: 2px solid black;
   padding-left: 0.5vw;
   font-weight: bold;
+  border-radius: 6px;
 }
 select {
   width: 15vw;
@@ -280,6 +281,7 @@ select {
   font-family: nexa-light;
   font-size: 0.7em;
   border: 2px solid black;
+  border-radius: 6px;
 }
 button {
   width: 5vw;
@@ -287,6 +289,7 @@ button {
   font-family: nexa-light;
   font-size: 0.7em;
   border: 2px solid black;
+  border-radius: 6px;
 }
 #msg {
   width: 35vw;
@@ -365,6 +368,47 @@ label {
     font-size: 6vw;
     color: white;
     overflow: hidden;
+  }
+  /* FORMULARZ KONTAKT */
+  #wybor {
+    font-size: 2.7vw;
+  }
+  form {
+    font-size: 1em;
+  }
+  input {
+    width: 50vw;
+    height: 3vw;
+    font-size: 1.2em;
+    font-family: nexa-light;
+    border: 2px solid black;
+    padding-left: 0.5vw;
+    font-weight: bold;
+    border-radius: 6px;
+  }
+  select {
+    width: 35vw;
+    height: 4vw;
+    font-family: nexa-light;
+    font-size: 1.6em;
+    border: 2px solid black;
+    border-radius: 6px;
+  }
+  button {
+    width: 13vw;
+    height: 4vw;
+    font-family: nexa-light;
+    font-size: 1.3em;
+    border: 2px solid black;
+    border-radius: 6px;
+  }
+  #msg {
+    width: 65vw;
+    height: 4vw;
+  }
+  label {
+    float: left;
+    margin-left: 24.7vw;
   }
 }
 
@@ -549,5 +593,48 @@ label {
     font-size: 4vw;
     margin-left: 6vw;
     color: #494949;
+  }
+
+  /* FORMULARZ KONTAKT */
+  #wybor {
+    font-size: 3em;
+  }
+  form {
+    font-size: 1em;
+  }
+  input {
+    width: 80vw;
+    height: 5vw;
+    font-size: 2.2em;
+    font-family: nexa-light;
+    border: 2px solid black;
+    padding-left: 0.5vw;
+    font-weight: bold;
+    border-radius: 6px;
+  }
+  select {
+    width: 60vw;
+    height: 7vw;
+    font-family: nexa-light;
+    font-size: 2.2em;
+    border: 2px solid black;
+    border-radius: 6px;
+  }
+  button {
+    width: 22vw;
+    height: 7vw;
+    font-family: nexa-light;
+    font-size: 2.2em;
+    border: 2px solid black;
+    border-radius: 6px;
+  }
+  #msg {
+    width: 90vw;
+    height: 7vw;
+  }
+  label {
+    float: left;
+    font-size: 2em;
+    margin-left: 10vw;
   }
 }
