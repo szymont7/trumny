@@ -3,7 +3,11 @@
   margin: 0;
   padding: 0;
 }
-
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #1f1f1f;
+}
 .banner {
   height: 30vw;
   width: 100vw;
@@ -143,13 +147,17 @@ hr {
   text-shadow: 2px 2px 3px #1f1f1f;
 }
 .content {
-  width: 100%;
-  height: 50vw;
   background-color: #1f1f1f;
+  color: whitesmoke;
+  font-family: nexa-light;
+  font-size: 2vw;
+  text-align: center;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
 }
 .topnav {
   overflow: hidden;
-
+  float: left;
   position: fixed;
   font-family: noto;
   top: 0;
@@ -161,8 +169,7 @@ hr {
   color: white;
   padding-right: 0.8vw;
   text-decoration: none;
-
-  float: left;
+  display: inline-block;
 }
 .topnav #linki {
   display: none;
@@ -172,27 +179,28 @@ hr {
 }
 .topnav a.icon {
   position: fixed;
-  right: 0.5vw;
+  right: 0.8vw;
   top: 0.2vw;
   z-index: 5;
   font-size: 4vw;
   color: white;
   overflow: hidden;
+  display: block;
 }
 .topnav a:hover {
   color: rgb(105, 105, 105);
 }
 
 footer {
-  left: 0;
-  bottom: 0;
   background-color: #000000;
-  width: 100vw;
+  width: 100%;
   color: white;
   text-shadow: 2px 2px 3px #1f1f1f;
   text-align: center;
-  height: 4vw;
+  height: 8vh;
   font-family: noto;
+  font-size: 1.2rem;
+  overflow: hidden;
 }
 
 @font-face {
@@ -381,9 +389,12 @@ footer {
   }
   .topnav #linki {
     display: none;
-    padding-right: 8vw;
-    padding-top: 2vw;
-    font-size: 3.5vw;
+    width: 27vw;
+    height: 18vh;
+    border-left: 2px solid rgb(66, 65, 65);
+    border-bottom: 2px solid rgb(66, 65, 65);
+    font-size: 4.5vw;
+    padding-left: 2vw;
   }
   .topnav a.icon {
     position: fixed;
@@ -393,5 +404,31 @@ footer {
     font-size: 7vw;
     color: white;
     overflow: hidden;
+    float: right;
+  }
+  .topnav a {
+    color: white;
+    padding-right: 0.8vw;
+    text-decoration: none;
+    display: block;
+  }
+  .topnav {
+    overflow: hidden;
+    background-color: #1f1f1f;
+    position: fixed;
+    font-family: noto;
+    top: 0;
+    right: 0;
+    z-index: 20;
+  }
+  footer {
+    background-color: #000000;
+    width: 100%;
+    color: white;
+    text-shadow: 2px 2px 3px #1f1f1f;
+    text-align: center;
+    height: 2.5rem;
+    font-family: noto;
+    font-size: 0.8rem;
   }
 }
