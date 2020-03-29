@@ -8,7 +8,6 @@ body {
   height: 100vh;
   background-color: black;
 }
-/* BANER ANIMOWANY */
 .banner {
   height: 30vw;
   width: 100vw;
@@ -104,7 +103,7 @@ body {
     width: 0%;
   }
 }
-/* LOGO */
+
 .logo {
   position: absolute;
   top: 3vw;
@@ -135,7 +134,6 @@ hr {
   font-size: 0.9vw;
   font-weight: 400;
 }
-/* no pasek ten pod banerem */
 .pasek {
   width: 100vw;
   text-align: center;
@@ -149,7 +147,15 @@ hr {
   text-shadow: 2px 2px 3px #1f1f1f;
   padding-bottom: 2vh;
 }
-/* MENU */
+.content {
+  background-color: #1f1f1f;
+  color: whitesmoke;
+  font-family: nexa-light;
+  font-size: 2vw;
+  text-align: center;
+  padding-top: 3vh;
+  padding-bottom: 14vh;
+}
 .topnav {
   overflow: hidden;
   float: left;
@@ -185,7 +191,7 @@ hr {
 .topnav a:hover {
   color: rgb(105, 105, 105);
 }
-/* STÓPKARZ */
+
 footer {
   background-color: #000000;
   width: 100%;
@@ -197,7 +203,7 @@ footer {
   font-size: 1.5vw;
   overflow: hidden;
 }
-/* CZCIONKI */
+
 @font-face {
   font-family: nexa-light;
   src: url(font/nexa-light.otf);
@@ -214,97 +220,7 @@ footer {
   font-family: notolight;
   src: url(font/NotoSansKR-Light.otf);
 }
-/* TABELKA CENNIK */
-.tb {
-  border-collapse: collapse;
-  border-spacing: 0;
-  background-color: whitesmoke;
-  color: black;
-  font-family: nexa-light;
-  font-weight: bold;
-  font-size: 2.3vw;
-  margin-left: 18.2vw;
-}
-.tb td {
-  padding: 2vw 4vw;
-  border-style: solid;
-  border-width: 1px;
-  overflow: hidden;
-  word-break: normal;
-  border-color: black;
-}
-.tb th {
-  font-weight: normal;
-  padding: 2vw 4vw;
-  border-style: solid;
-  border-width: 1px;
-  overflow: hidden;
-  word-break: normal;
-  border-color: black;
-  text-align: center;
-  vertical-align: top;
-}
-.content {
-  background-color: #1f1f1f;
-  color: whitesmoke;
-  font-family: nexa-light;
-  font-size: 2vw;
-  padding-top: 2vh;
-  padding-bottom: 4vh;
-  text-align: center;
-}
-#bottomtext {
-  font-size: 1.7vw;
-  margin-left: 27vw;
-  color: #494949;
-}
-/* FORMULARZ KONTAKT */
-#wybor {
-  font-size: 1.5vw;
-}
-form {
-  font-size: 1em;
-}
-input {
-  width: 30vw;
-  height: 1.7vw;
-  font-size: 0.7em;
-  font-family: nexa-light;
-  border: 2px solid black;
-  padding-left: 0.5vw;
-  font-weight: bold;
-  border-radius: 6px;
-}
-select {
-  width: 15vw;
-  height: 2vw;
-  font-family: nexa-light;
-  font-size: 0.7em;
-  border: 2px solid black;
-  border-radius: 6px;
-}
-button {
-  width: 5vw;
-  height: 2vw;
-  font-family: nexa-light;
-  font-size: 0.7em;
-  border: 2px solid black;
-  border-radius: 6px;
-}
-#msg {
-  width: 35vw;
-  height: 4vw;
-}
-label {
-  float: left;
-  margin-left: 34vw;
-}
-/* PODSTRONA O NAS */
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
+
 /*TABLET*/
 
 @media screen and (min-width: 600px) and (max-width: 1099px) {
@@ -375,50 +291,6 @@ label {
     color: white;
     overflow: hidden;
   }
-  /* FORMULARZ KONTAKT */
-  #wybor {
-    font-size: 2.7vw;
-  }
-  form {
-    font-size: 1em;
-  }
-  input {
-    width: 50vw;
-    height: 3vw;
-    font-size: 1.2em;
-    font-family: nexa-light;
-    border: 2px solid black;
-    padding-left: 0.5vw;
-    font-weight: bold;
-    border-radius: 6px;
-  }
-  select {
-    width: 35vw;
-    height: 4vw;
-    font-family: nexa-light;
-    font-size: 1.6em;
-    border: 2px solid black;
-    border-radius: 6px;
-  }
-  button {
-    width: 13vw;
-    height: 4vw;
-    font-family: nexa-light;
-    font-size: 1.3em;
-    border: 2px solid black;
-    border-radius: 6px;
-  }
-  #msg {
-    width: 65vw;
-    height: 4vw;
-  }
-  label {
-    float: left;
-    margin-left: 24.7vw;
-  }
-  #indexfont {
-    font-size: 2em;
-  }
 }
 
 /*MOBILE*/
@@ -460,7 +332,7 @@ label {
     position: absolute;
     z-index: 2;
     margin-left: 25vw;
-    margin-top: 2.4vw;
+    margin-top: 3.1vw;
     width: 0.5;
     height: 4.3vw;
     color: white;
@@ -470,7 +342,7 @@ label {
     z-index: 2;
     font-family: nexa-light;
     float: left;
-    top: 2.6vw;
+    top: 3.2vw;
     left: 26vw;
     color: white;
     font-size: 2.2vw;
@@ -518,12 +390,12 @@ label {
   }
   .topnav #linki {
     display: none;
-    width: 24vw;
-    min-height: 19vh;
-    opacity: 100%;
+    width: 27vw;
+    height: 18vh;
+    border-left: 2px solid rgb(66, 65, 65);
+    border-bottom: 2px solid rgb(66, 65, 65);
     font-size: 4.5vw;
-    padding-left: 2em;
-    max-height: 25vh;
+    padding-left: 2vw;
   }
   .topnav a.icon {
     position: fixed;
@@ -534,25 +406,21 @@ label {
     color: white;
     overflow: hidden;
     float: right;
-    opacity: 100%;
   }
   .topnav a {
     color: white;
     padding-right: 0.8vw;
     text-decoration: none;
     display: block;
-    opacity: unset;
   }
   .topnav {
     overflow: hidden;
     background-color: black;
-    opacity: 90%;
     position: fixed;
     font-family: noto;
     top: 0;
     right: 0;
     z-index: 20;
-    border-radius: 10px;
   }
   footer {
     background-color: #000000;
@@ -563,7 +431,6 @@ label {
     height: 2.5rem;
     font-family: noto;
     font-size: 0.8rem;
-    margin-top: 2vh;
   }
   .pasek {
     width: 100vw;
@@ -582,74 +449,9 @@ label {
     background-color: #1f1f1f;
     color: whitesmoke;
     font-family: nexa-light;
+    font-size: 5vw;
+    text-align: center;
     padding-top: 3vh;
     padding-bottom: 5vh;
-  }
-
-  .tb col {
-    width: auto;
-  }
-  .tb {
-    border-collapse: collapse;
-    border-spacing: 0;
-    margin-left: 7vw;
-    background-color: whitesmoke;
-    color: black;
-    font-family: nexa-light;
-    font-weight: bold;
-    font-size: 3.5vw;
-    width: auto;
-  }
-
-  #bottomtext {
-    font-size: 4vw;
-    margin-left: 6vw;
-    color: #494949;
-  }
-
-  /* FORMULARZ KONTAKT */
-  #wybor {
-    font-size: 3em;
-  }
-  form {
-    font-size: 1em;
-  }
-  input {
-    width: 80vw;
-    height: 5vw;
-    font-size: 2.2em;
-    font-family: nexa-light;
-    border: 2px solid black;
-    padding-left: 0.5vw;
-    font-weight: bold;
-    border-radius: 6px;
-  }
-  select {
-    width: 60vw;
-    height: 7vw;
-    font-family: nexa-light;
-    font-size: 2.2em;
-    border: 2px solid black;
-    border-radius: 6px;
-  }
-  button {
-    width: 22vw;
-    height: 7vw;
-    font-family: nexa-light;
-    font-size: 2.2em;
-    border: 2px solid black;
-    border-radius: 6px;
-  }
-  #msg {
-    width: 90vw;
-    height: 7vw;
-  }
-  label {
-    float: left;
-    font-size: 2em;
-    margin-left: 10vw;
-  }
-  #indexfont {
-    font-size: 3em;
   }
 }
