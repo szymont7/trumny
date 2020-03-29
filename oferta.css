@@ -147,15 +147,7 @@ hr {
   text-shadow: 2px 2px 3px #1f1f1f;
   padding-bottom: 2vh;
 }
-.content {
-  background-color: #1f1f1f;
-  color: whitesmoke;
-  font-family: nexa-light;
-  font-size: 2vw;
-  text-align: center;
-  padding-top: 3vh;
-  padding-bottom: 14vh;
-}
+
 .topnav {
   overflow: hidden;
   float: left;
@@ -219,6 +211,48 @@ footer {
 @font-face {
   font-family: notolight;
   src: url(font/NotoSansKR-Light.otf);
+}
+.tb {
+  border-collapse: collapse;
+  border-spacing: 0;
+  background-color: whitesmoke;
+  color: black;
+  font-family: nexa-light;
+  font-weight: bold;
+  font-size: 2.3vw;
+  margin-left: 18.2vw;
+}
+.tb td {
+  padding: 2vw 4vw;
+  border-style: solid;
+  border-width: 1px;
+  overflow: hidden;
+  word-break: normal;
+  border-color: black;
+}
+.tb th {
+  font-weight: normal;
+  padding: 2vw 4vw;
+  border-style: solid;
+  border-width: 1px;
+  overflow: hidden;
+  word-break: normal;
+  border-color: black;
+  text-align: center;
+  vertical-align: top;
+}
+.content {
+  background-color: #1f1f1f;
+  color: whitesmoke;
+  font-family: nexa-light;
+  font-size: 2vw;
+  padding-top: 2vh;
+  padding-bottom: 4vh;
+}
+#bottomtext {
+  font-size: 1.7vw;
+  margin-left: 27vw;
+  color: #494949;
 }
 
 /*TABLET*/
@@ -449,9 +483,29 @@ footer {
     background-color: #1f1f1f;
     color: whitesmoke;
     font-family: nexa-light;
-    font-size: 5vw;
-    text-align: center;
+
     padding-top: 3vh;
     padding-bottom: 5vh;
+  }
+
+  .tb col {
+    width: auto;
+  }
+  .tb {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-left: 4.5vw;
+    background-color: whitesmoke;
+    color: black;
+    font-family: nexa-light;
+    font-weight: bold;
+    font-size: 3.5vw;
+    width: auto;
+  }
+
+  #bottomtext {
+    font-size: 4vw;
+    margin-left: 6vw;
+    color: #494949;
   }
 }
