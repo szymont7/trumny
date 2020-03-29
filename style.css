@@ -8,6 +8,7 @@ body {
   height: 100vh;
   background-color: black;
 }
+/* BANER ANIMOWANY */
 .banner {
   height: 30vw;
   width: 100vw;
@@ -103,7 +104,7 @@ body {
     width: 0%;
   }
 }
-
+/* LOGO */
 .logo {
   position: absolute;
   top: 3vw;
@@ -134,6 +135,7 @@ hr {
   font-size: 0.9vw;
   font-weight: 400;
 }
+/* no pasek ten pod banerem */
 .pasek {
   width: 100vw;
   text-align: center;
@@ -147,15 +149,7 @@ hr {
   text-shadow: 2px 2px 3px #1f1f1f;
   padding-bottom: 2vh;
 }
-.content {
-  background-color: #1f1f1f;
-  color: whitesmoke;
-  font-family: nexa-light;
-  font-size: 2vw;
-  text-align: center;
-  padding-top: 3vh;
-  padding-bottom: 14vh;
-}
+/* MENU */
 .topnav {
   overflow: hidden;
   float: left;
@@ -191,7 +185,7 @@ hr {
 .topnav a:hover {
   color: rgb(105, 105, 105);
 }
-
+/* STÓPKARZ */
 footer {
   background-color: #000000;
   width: 100%;
@@ -203,7 +197,7 @@ footer {
   font-size: 1.5vw;
   overflow: hidden;
 }
-
+/* CZCIONKI */
 @font-face {
   font-family: nexa-light;
   src: url(font/nexa-light.otf);
@@ -220,7 +214,88 @@ footer {
   font-family: notolight;
   src: url(font/NotoSansKR-Light.otf);
 }
-
+/* TABELKA CENNIK */
+.tb {
+  border-collapse: collapse;
+  border-spacing: 0;
+  background-color: whitesmoke;
+  color: black;
+  font-family: nexa-light;
+  font-weight: bold;
+  font-size: 2.3vw;
+  margin-left: 18.2vw;
+}
+.tb td {
+  padding: 2vw 4vw;
+  border-style: solid;
+  border-width: 1px;
+  overflow: hidden;
+  word-break: normal;
+  border-color: black;
+}
+.tb th {
+  font-weight: normal;
+  padding: 2vw 4vw;
+  border-style: solid;
+  border-width: 1px;
+  overflow: hidden;
+  word-break: normal;
+  border-color: black;
+  text-align: center;
+  vertical-align: top;
+}
+.content {
+  background-color: #1f1f1f;
+  color: whitesmoke;
+  font-family: nexa-light;
+  font-size: 2vw;
+  padding-top: 2vh;
+  padding-bottom: 4vh;
+  text-align: center;
+}
+#bottomtext {
+  font-size: 1.7vw;
+  margin-left: 27vw;
+  color: #494949;
+}
+/* FORMULARZ KONTAKT */
+#wybor {
+  font-size: 1.5vw;
+}
+form {
+  font-size: 1em;
+}
+input {
+  width: 30vw;
+  height: 1.7vw;
+  font-size: 0.7em;
+  font-family: nexa-light;
+  border: 2px solid black;
+  padding-left: 0.5vw;
+  font-weight: bold;
+}
+select {
+  width: 15vw;
+  height: 2vw;
+  font-family: nexa-light;
+  font-size: 0.7em;
+  border: 2px solid black;
+}
+button {
+  width: 5vw;
+  height: 2vw;
+  font-family: nexa-light;
+  font-size: 0.7em;
+  border: 2px solid black;
+}
+#msg {
+  width: 35vw;
+  height: 4vw;
+}
+label {
+  float: left;
+  margin-left: 34vw;
+}
 /*TABLET*/
 
 @media screen and (min-width: 600px) and (max-width: 1099px) {
@@ -431,6 +506,7 @@ footer {
     height: 2.5rem;
     font-family: noto;
     font-size: 0.8rem;
+    margin-top: 2vh;
   }
   .pasek {
     width: 100vw;
@@ -449,9 +525,29 @@ footer {
     background-color: #1f1f1f;
     color: whitesmoke;
     font-family: nexa-light;
-    font-size: 5vw;
-    text-align: center;
+
     padding-top: 3vh;
     padding-bottom: 5vh;
+  }
+
+  .tb col {
+    width: auto;
+  }
+  .tb {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-left: 7vw;
+    background-color: whitesmoke;
+    color: black;
+    font-family: nexa-light;
+    font-weight: bold;
+    font-size: 3.5vw;
+    width: auto;
+  }
+
+  #bottomtext {
+    font-size: 4vw;
+    margin-left: 6vw;
+    color: #494949;
   }
 }

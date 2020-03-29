@@ -50,14 +50,58 @@
       </div>
     </div>
     <div class="pasek">
-      <h2>nie ma lepszych trumien</h2>
+      <h2>zamow przez internet</h2>
     </div>
     <div class="content">
-      Jesteśmy firmą spełniającą marzenia. <br />
-      Chcesz pokazać sąsiadowi, że jesteś lepszy od niego nawet po śmierci?<br />
-      Firma "BENG" ci z tym pomoże. Wieloletnie doświadczenie, empatyczni
-      pracownicy i ładne trumny. <br />
-      <h2>Tylko u nas!</h1>
+      <form>
+        <label for="name">Imię i nazwisko</label> <br />
+        <input
+          name="name"
+          type="text"
+          placeholder="Podaj twoje imię i nazwisko"
+        />
+        <br />
+        <label for="email">Adres email</label> <br />
+        <input name="email" type="text" placeholder="Podaj twój adres email" />
+        <br />
+        <label for="creditcard">Numer karty kredytowej</label> <br />
+        <input
+          name="creditcard"
+          type="text"
+          placeholder="Podaj numer twojej karty kredytowej"
+        />
+        <br />
+        <label for="name">Kod CVV</label> <br />
+        <input
+          name="cvv"
+          type="text"
+          placeholder="Podaj kod CVV twojej karty"
+        />
+        <br /><label for="expdate">Data ważności</label>
+        <br />
+        <input
+          name="expdate"
+          type="text"
+          placeholder="Podaj datę ważności twojej karty"
+        />
+        <br />
+        <label for="textbox">Opcjonalna wiadomość</label> <br />
+
+        <input
+          name="msg"
+          type="textbox"
+          placeholder="Napisz wiadomość"
+          id="msg"
+        />
+        <br />
+        <span id="wybor">Jak blisko śmierci jesteś?</span> <br />
+        <select>
+          <option selected="selected" value="1">Blisko</option>
+          <option value="2">Nie blisko</option>
+        </select>
+        <br />
+        <button type="submit" value="Wyślij">Wyślij</button>
+      </form>
     </div>
     <footer>
       Trumny "BENG" <br />
