@@ -196,6 +196,7 @@ footer {
   font-family: noto;
   font-size: 1.5vw;
   overflow: hidden;
+  padding-bottom: 1vw;
 }
 /* CZCIONKI */
 @font-face {
@@ -304,6 +305,40 @@ label {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+}
+/* GALERIA */
+.gallerywrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #1f1f1f;
+  overflow-y: hidden;
+  align-items: center;
+  position: relative;
+  padding-top: 2vw;
+}
+.gallerywrap img {
+  padding: 1vw;
+  transition: 0.2s;
+}
+.gallerywrap img:hover {
+  transform: scale(1.2);
+}
+.gallerywrap > * {
+  overflow: hidden;
+  color: black;
+  text-align: center;
+  margin-bottom: 4vw;
+  z-index: 5;
+  font-family: nexa-light;
+  border: 3px whitek solid;
+  border-radius: 10px;
+  background-color: white;
+  font-weight: 900;
+  padding-bottom: 1em;
+}
+.gallerywrap > *:hover {
+  transform: scale(1.1);
 }
 /*TABLET*/
 
@@ -660,5 +695,20 @@ label {
   }
   .container {
     font-size: 2em;
+  }
+  .gallerywrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #1f1f1f;
+    overflow-y: hidden;
+    align-items: center;
+  }
+  .gallerywrap img:hover {
+    transform: scale(1);
+  }
+  .gallerywrap span:hover {
+    transform: scale(1.2);
   }
 }
