@@ -652,4 +652,10 @@ label {
   #indexfont {
     font-size: 3em;
   }
+  .tekst {
+    font-size: 5vw;
+  }
+  .container img {
+    height: 360px;
+  }
 }
