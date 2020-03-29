@@ -658,4 +658,7 @@ label {
   .container img {
     height: 360px;
   }
+  .container {
+    font-size: 2em;
+  }
 }
